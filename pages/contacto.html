@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Formulario de contacto demostrativo con validación HTML5." name="description"/>
+  <meta content="#0b2341" name="theme-color"/>
+  <title>
+   Contacto | Tecnologías Web
+  </title>
+  <link href="../css/estilos.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#contenido">
+   Saltar al contenido principal
+  </a>
+  <header class="site-header">
+   <div class="container header-line">
+    <a aria-label="Tecnologías Web, ir al inicio" class="brand" href="../index.html">
+     <span aria-hidden="true" class="brand-logo">
+      &lt;/&gt;
+     </span>
+     <span>
+      TECNOLOGÍAS
+      <strong>
+       WEB
+      </strong>
+     </span>
+    </a>
+    <p class="eyebrow top-caption">
+     Proyecto académico · HTML5
+    </p>
+   </div>
+  </header>
+  <nav aria-label="Navegación principal" class="site-nav">
+   <div class="container nav-line">
+    <a href="../index.html">
+     Inicio
+    </a>
+    <a href="../pages/sociedad.html">
+     Sociedad
+    </a>
+    <a href="../pages/negocios.html">
+     Negocios
+    </a>
+    <a aria-current="page" href="../pages/contacto.html">
+     Contacto
+    </a>
+   </div>
+  </nav>
+  <main id="contenido">
+   <section class="page-hero contact-hero">
+    <div class="container">
+     <span class="tag tag-light">
+      CONTACTO
+     </span>
+     <h1>
+      Comparte tus preguntas
+     </h1>
+     <p>
+      Esta sección presenta un formulario de ejemplo para practicar los elementos de HTML5 requeridos en la actividad.
+     </p>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container contact-layout">
+     <section aria-labelledby="form-heading" class="form-card">
+      <span class="tag">
+       FORMULARIO HTML5
+      </span>
+      <h2 id="form-heading">
+       Formulario de contacto
+      </h2>
+      <p>
+       Los campos marcados con * son obligatorios. Usa únicamente datos de prueba.
+      </p>
+      <form action="#resultado" id="contact-form" method="get">
+       <div class="form-row">
+        <div class="field">
+         <label for="nombre">
+          Nombre
+          <span aria-hidden="true">
+           *
+          </span>
+         </label>
+         <input autocomplete="name" id="nombre" maxlength="80" name="nombre" placeholder="Escribe un nombre de prueba" required="" type="text"/>
+        </div>
+        <div class="field">
+         <label for="correo">
+          Correo electrónico
+          <span aria-hidden="true">
+           *
+          </span>
+         </label>
+         <input autocomplete="email" id="correo" maxlength="120" name="correo" placeholder="ejemplo@correo.com" required="" type="email"/>
+        </div>
+       </div>
+       <div class="field">
+        <label for="asunto">
+         Asunto
+         <span aria-hidden="true">
+          *
+         </span>
+        </label>
+        <input id="asunto" maxlength="120" name="asunto" placeholder="Motivo del mensaje" required="" type="text"/>
+       </div>
+       <div class="field">
+        <label for="mensaje">
+         Mensaje
+         <span aria-hidden="true">
+          *
+         </span>
+        </label>
+        <textarea id="mensaje" maxlength="1000" name="mensaje" placeholder="Escribe aquí tu comentario de prueba" required="" rows="6"></textarea>
+       </div>
+       <button class="btn btn-dark" type="submit">
+        Validar formulario
+        <span aria-hidden="true">
+         →
+        </span>
+       </button>
+       <p aria-live="polite" class="form-status" id="resultado" role="status">
+        Los datos no serán enviados ni almacenados.
+       </p>
+      </form>
+     </section>
+     <aside class="contact-aside">
+      <div class="aside-icon">
+       i
+      </div>
+      <h2>
+       ¿Cómo funciona?
+      </h2>
+      <p>
+       El navegador comprueba que los campos estén completos y que el correo tenga un formato válido.
+      </p>
+      <p>
+       Este proyecto es
+       <strong>
+        estático
+       </strong>
+       : no tiene servidor, base de datos ni una dirección de envío configurada.
+      </p>
+      <div class="aside-divider">
+      </div>
+      <h3>
+       Etiquetas usadas
+      </h3>
+      <ul>
+       <li>
+        <code>
+         &lt;form&gt;
+        </code>
+        agrupa los campos.
+       </li>
+       <li>
+        <code>
+         &lt;label&gt;
+        </code>
+        identifica cada control.
+       </li>
+       <li>
+        <code>
+         &lt;input&gt;
+        </code>
+        recibe textos y correo.
+       </li>
+       <li>
+        <code>
+         &lt;textarea&gt;
+        </code>
+        recibe mensajes largos.
+       </li>
+       <li>
+        <code>
+         &lt;button&gt;
+        </code>
+        activa la validación.
+       </li>
+      </ul>
+     </aside>
+    </div>
+   </section>
+   <script defer="" src="../js/formulario.js">
+   </script>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-grid">
+    <div>
+     <p class="footer-heading">
+      Impacto de las Tecnologías Web
+     </p>
+     <p>
+      Un recorrido educativo por sus oportunidades y desafíos en la sociedad y los negocios.
+     </p>
+    </div>
+    <div>
+     <p class="footer-heading">
+      Explora
+     </p>
+     <p>
+      <a href="../index.html">
+       Inicio
+      </a>
+      ·
+      <a href="../pages/sociedad.html">
+       Sociedad
+      </a>
+      ·
+      <a href="../pages/negocios.html">
+       Negocios
+      </a>
+      ·
+      <a href="../pages/contacto.html">
+       Contacto
+      </a>
+     </p>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    Sitio estático HTML5 y CSS3 · Actividad Práctica 1 · UTPL
+   </div>
+  </footer>
+ </body>
+</html>
